@@ -21,12 +21,12 @@ header{
     top:0;
 
 }
-.logoheader:hover{
+.logo_header:hover{
     color:white;
 }
 
 header .logo_header{
-    font-size: 50px;
+    font-size: 50px !important;
     left: 0;
     letter-spacing: 2px;
    

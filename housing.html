@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/venobox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="./css/lsb.css">
     <link rel="stylesheet" href="./css/style_housing.css">
 </head>
@@ -121,6 +122,8 @@
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="counter">650</div>
                     <h4>plans</h4>
+
+
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="counter">1021</div>
@@ -132,6 +135,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <div id="blog">
         <div class="container">
@@ -145,7 +149,8 @@
                             </div>
                             <div class="text_back">
                                 <h5>Lorem Ipsum Passage,</h5>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium
                                 </p>
                                 <div class="more_btn">
                                     <a href="">Read more..</a>
@@ -162,7 +167,8 @@
                             </div>
                             <div class="text_back">
                                 <h5>Lorem Ipsum Passage,</h5>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium
                                 </p>
                                 <div class="more_btn">
                                     <a href="">Read more..</a>
@@ -179,7 +185,8 @@
                             </div>
                             <div class="text_back">
                                 <h5>Lorem Ipsum Passage,</h5>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium
                                 </p>
                                 <div class="more_btn">
                                     <a href="">Read more..</a>
@@ -194,21 +201,26 @@
     <div class="play">
         <div class="play-banner">
             <div class="button">
-                <a href="#small-dialog1" class="play-icon">
+                <a href="#small-dialog1" class="play-icon venobox" data-vbtype="inline">
                     <span class="fa fa-play-circle"></span>
                 </a>
             </div>
             <div id="small-dialog1" class="clip-hide">
                 <iframe src="https://player.vimeo.com/video/106770833"></iframe>
             </div>
+
+            
         </div>
         <div class="matter">
             <h2>Get More..</h2>
             <div class="some-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim
-                    veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-                    nulla pariatur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    minim
+                    veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                    voluptas
+                
             </div>
             <div class="some-text1">
                 <a href="#">Read More..</a>
@@ -475,9 +487,34 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <script src="./js/jquery.countup.min.js"></script>
     <script>
-        $('.counter').countUp();
+
+        $('.counter').countUp({
+            // 'time': 2000,
+            // 'delay': 10
+        });
     </script>
+    <script type="text/javascript" src="./js/venobox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+    </script>
+    <script>
+        $('.venobox_custom').venobox({
+    framewidth : '200px',                            // default: ''
+    frameheight: '100px',                            // default: ''
+    border     : '10px',                             // default: '0'
+    bgcolor    : '#5dff5e',                          // default: '#fff'
+    titleattr  : 'data-title',                       // default: 'title'
+    numeratio  : true,                               // default: false
+    infinigall : true,                               // default: false
+    share      : ['facebook', 'twitter', 'download'] // default: []
+});
+    </script>
+
     <script src="./js/jquery.countup.min.js"></script>
     <script src="./js/lsb.min.js"></script>
     <script>
