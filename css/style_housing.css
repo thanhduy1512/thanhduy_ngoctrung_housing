@@ -3,38 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+header a{
+    text-decoration: none !important;
+}
 body img {
     width: 100%;
 }
 header{
     display: flex;
-    padding: 20px 0;
+    padding:10px;
     background-color:rgba(0, 0, 0, 0.685);
     align-items: center;
     justify-content: space-around;
     position:fixed;
     width: 100%;
     z-index: 1;
-    top:0
+    top:0;
+
+}
+.logoheader:hover{
+    color:white;
+}
 }
 header .logo_header{
     font-size: 50px;
     left: 0;
     letter-spacing: 2px;
-    margin-right: 200px;
+   
 }
 header nav ul {
     list-style: none;
-    width: 200px;
-    display: flex;
-    margin-right: 300px;
+    display: flex;  
 }
 header nav ul li {  
     font-size: 14px;
-    margin: 0 10px;    
+    margin: 0 10px;   
+    text-decoration:none; 
 }
 header nav ul li a{
+    text-decoration:none !important;
+    letter-spacing: 1px;
     font-size:17px;
+    transition: all 0.5s;
+    border-bottom:2px solid #fff;
+}
+header nav ul li a:hover{
+    color:#00cdce;
+    border-bottom: 0px;
+    
 }
 header a{
     text-decoration: none;
@@ -44,12 +60,7 @@ header a{
 .logo_header span{
     color:#00cdce;
 }
-header ul li:after{
-    content:"";
-    display:block;
-    clear:both;
-    height: 1px;
-    background-color:white;
+
 }
 #demo ul li {
     height:10px;
@@ -111,6 +122,25 @@ header ul li:after{
     text-align:center;
     font-size:4em;
 }
+.more_btn a:hover{
+    color:white;
+    border-bottom:none;  
+}
+.more_btn a{
+    color:#00cdce;
+    text-decoration:none;
+    transition:all 0.5s;
+}
+.more_btn{
+    text-align:center !important;
+    width: 40%;
+    border: 1px solid black;
+    background: black;
+    font-size: 17px;
+    color: #00cdce;
+    padding: 10px 10px;
+    text-decoration: none;
+}
 #about h4{
     color:#00cdce;
     font-size:30px;
@@ -153,6 +183,7 @@ header ul li:after{
     color:white;
 }
 #blog{
+    margin-bottom:4em;
     margin-top: 4em ;
 }
 .title_blog{
@@ -161,19 +192,31 @@ header ul li:after{
     margin-bottom:0.8em;
     font-weight: 500;
 }
-#blog .service-left{  
-    
+.text_back h5{
+    color:#00cdce;
+    font-size:1.6em;
+}
+.text_back p{
+    text-align:left;
+}
+.text_back{
+    text-align:left; 
+    background:#efefef;
+}
+#blog .service-left{    
     padding-right:15px;
     padding-left:15px;
 }
 .play{
     display:flex;
+    height: 400px;
+   
 }
 .play-banner{
     background:url(../images/video.jpg)no-repeat;
     background-size:cover;
     text-align:center;
-    width:100%;
+    width:80%;
 }
 .play-banner .button{
     margin-top:8em;
@@ -187,6 +230,7 @@ header ul li:after{
 }
 .matter{
     background:#00cdce; 
+    width:100%;
 }
 .matter h2{
     text-align: center;
@@ -210,7 +254,20 @@ header ul li:after{
     text-decoration:none;   
     display:inline-block;
     transition:all 0.5s;
+    margin-left:17em;
 }
 .some-text1 a:hover{
     color:white;
+}
+.button a{
+    padding: 16px 19px;
+   
+    left: 26.5em;
+    display: inline-block;
+    background: rgba(0, 189, 189, 0.53);
+    border-radius: 55%;
+    color: #ffffff;
+}
+.play-icon span {
+    font-size: 35px;
 }
